@@ -33,7 +33,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 1px 1px $works-links-shadow;
+    box-shadow: $works-links-shadow;
   }
 }
 

@@ -39,7 +39,7 @@ textarea {
 
 body {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-family: "Roboto", sans-serif;
@@ -497,6 +497,13 @@ header {
   }
 }
 
+.festures__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .features__item {
   margin-top: 30px;
   margin-left: 30px;
@@ -536,10 +543,12 @@ header {
 }
 
 .features__title {
-  text-align: center;
-  margin-bottom: 10px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: #212121;
 }
@@ -652,8 +661,9 @@ header {
 
 .team__text {
   font-size: 16px;
-  line-height: 1.18;
-  margin-bottom: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .social {
@@ -1044,6 +1054,10 @@ header {
 }
 
 .form__field {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -1095,7 +1109,9 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
 
@@ -1239,7 +1255,7 @@ header {
 }
 
 .projects__link:hover, .projects__link:focus {
-  box-shadow: 0px 1px 1px 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects__card-box {
