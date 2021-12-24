@@ -1,0 +1,120 @@
+.footer {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $hero-color;
+}
+
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer__address {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__map {
+  color: $secondary-text-color;
+
+  transition: color $transition-time $transition-function;
+
+  &:hover,
+  &:focus {
+    color: $back-ground-color;
+  }
+}
+
+.address__link {
+  color: $footer-background-color;
+
+  transition: color $transition-time $transition-function;
+
+  &:hover,
+  &:focus {
+    color: $back-ground-color;
+  }
+}
+
+.footer__box {
+  display: inline-block;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.footer__text {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.87;
+  text-transform: uppercase;
+
+  color: $secondary-text-color;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__social-link {
+  @include centeredFlex;
+
+  width: 40px;
+  height: 40px;
+
+  fill: $secondary-text-color;
+  background-color: $social-bgc;
+  border-radius: 50%;
+
+  transition: background-color $transition-time $transition-function, fill $transition-time $transition-function;
+
+  &:hover,
+  &:focus {
+    fill: $secondary-text-color;
+    background-color: $back-ground-color;
+    border-radius: 50%;
+  }
+}

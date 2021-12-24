@@ -1,0 +1,18 @@
+.address {
+	display: flex;
+	align-items: baseline;
+}
+
+.join {
+	display: flex;
+	align-items: center;
+}
+.subscribe__title,
+.join__title {
+	
+	@include font-source(14px, 700, 16px, 0.03em);
+	text-transform: uppercase;
+	color: $secondary-text-color;
+	font-style: normal;
+	margin-bottom: 20px;
+}

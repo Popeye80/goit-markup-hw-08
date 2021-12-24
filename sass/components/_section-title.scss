@@ -1,0 +1,7 @@
+.section__title {
+	@include font-source(36px, 700, 42px, 0.03em);
+	
+	margin-bottom: 50px;
+	margin-top: 0;
+	text-align: center;
+}

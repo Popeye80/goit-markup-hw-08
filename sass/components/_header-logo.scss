@@ -1,0 +1,43 @@
+.logo {
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  font-size: 24px;
+  line-height: 0.85;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+  padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-size: 26px;
+  line-height: 1.19;
+  }
+  
+  font-family: $logo-font;
+  font-weight: 700;
+  cursor: pointer;
+  color: $back-ground-color;
+}
+
+  .site-nav__logo {
+
+  @media screen and (min-width: 768px) {
+      margin-right: 88px;
+
+  }
+  @media screen and (min-width: 1200px) {
+  margin-right: 93px;
+
+  }
+}
+
+
+.site-nav__logo--black {
+  color: $primary-text-color;
+}

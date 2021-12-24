@@ -1,0 +1,90 @@
+.team__section {
+  background-color: $command-fon;
+}
+
+.team {
+  padding: 0;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+.team__item {
+  box-shadow: 0px 1px 3px $command-box-shadow;
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  background-color: $secondary-text-color;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    margin-left: 30px;
+
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.team__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team__title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: $primary-text-color;
+  
+}
+
+.team__text {
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 16px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__link {
+  @include centeredFlex;
+
+  width: 44px;
+  height: 44px;
+  fill: $icon-border-color;
+  border-radius: 50%;
+  transition: background-color $transition-time $transition-function, fill $transition-time $transition-function;
+
+  &:hover,
+  &:focus {
+    fill: $secondary-text-color;
+    background-color: $back-ground-color;
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}

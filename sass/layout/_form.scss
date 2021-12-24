@@ -1,0 +1,122 @@
+.form__field {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 10px;
+}
+.form__label {
+	@include font-source(12px, 400, 14px, 0.01em);
+
+	color: $light-text-color;
+}
+
+.form__input {
+	margin: 0;
+	padding: 12px 42px;
+	height: 40px;
+	border: 1px solid $form-border-color;
+	box-sizing: border-box;
+	border-radius: 4px;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	transition: border-color $transition-time $transition-function;
+	transition: border-color $transition-time $transition-function;
+	&:focus + .form-icon {
+		fill: $back-ground-color;
+	}
+	&:focus {
+		border-color: $back-ground-color;
+	}
+}
+
+.form__field label {
+	margin-bottom: 4px;
+}
+
+.form__icon {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	transition: fill $transition-time $transition-function;
+}
+
+.textarea {
+	border: 1px solid $form-border-color;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 12px 16px;
+	resize: none;
+	cursor: pointer;
+	outline: none;
+	transition: border-color $transition-time $transition-function;
+	&::placeholder {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.16;
+		letter-spacing: 0.01em;
+		color: $textarea-color;
+	}
+	&:hover,
+	&:focus {
+		border-color: $back-ground-color;
+	}
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
+
+.checkbox__label-text {
+	@include font-source(14px, 400, 24px, 0.03em);
+
+	margin: 0;
+	color: $light-text-color;
+}
+.checkbox__label-link {
+	color: $back-ground-color;
+	cursor: pointer;
+	margin: 0;
+	text-decoration: underline;
+}
+.checkbox__label-icon {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	background-color: $secondary-text-color;
+	border-radius: 2px;
+	border: 2px solid $light-text-color;
+}
+
+.checkbox__label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.checkbox__label-icon {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	margin-right: 7px;
+	transition: background-color $transition-time $transition-function;
+	.checkbox__label-input:checked + & {
+		border-radius: 2px;
+		background-image: url(../images/icon-check.svg);
+		background-size: contain;
+		background-color: $back-ground-color;
+		fill: $back-ground-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-color: $command-fon;
+	}
+}
+
+

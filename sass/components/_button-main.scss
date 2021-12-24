@@ -1,0 +1,15 @@
+.hero__button,
+.filter__button,
+.backdrop__button
+ {
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 4px;
+	border: 0;
+	background-color: $command-fon;
+	color: $secondary-text-color;
+	cursor: pointer;
+}
+
+
+

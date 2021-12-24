@@ -1,0 +1,16 @@
+.logo {
+	@include font-source(26px, 700, 31px, 0.03em);
+
+	font-family: $logo-font;
+	color: $back-ground-color;
+	font-style: normal;
+}
+.logo__header {
+	color: $light-text-color;
+}
+.logo__footer {
+	color: $secondary-text-color;
+}
+
+
+

@@ -1,0 +1,33 @@
+
+.filter {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.filter__item:not(:last-child) {
+	margin-right: 8px;
+	background-color: $command-fon;
+}
+.filter__button {
+	@include font-source(16px, 500, 26px, 0.03em );
+	
+	text-align: center;
+	min-width: 73px;
+	background-color: $command-fon;
+	padding: 6px 22px;
+	color: $light-text-color;
+	text-transform: none;
+	cursor: pointer;
+	border: none;
+	transition: box-shadow $transition-time $transition-function,
+		color $transition-time $transition-function,
+		background-color $transition-time $transition-function;
+        &:hover,
+        &:focus {
+		background-color: $back-ground-color;
+		color: $secondary-text-color;
+		box-shadow: $button-box-shadow;
+}
+}
+
