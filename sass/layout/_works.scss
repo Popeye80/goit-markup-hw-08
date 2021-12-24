@@ -33,7 +33,7 @@
 	padding: 63px 24px;
 	background-color: $works-bgc;
 	transition: transform $transition-time $transition-function,
-		visibility $transition-time $transition-function;
+	visibility $transition-time $transition-function;
 	.works__link:hover &,
 	.works__link:focus & {
 		transform: translateY(0);

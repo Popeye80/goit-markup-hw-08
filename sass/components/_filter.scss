@@ -36,7 +36,7 @@
   color: $primary-text-color;
   background-color: $command-fon;
   transition: background-color $transition-time $transition-function, color $transition-time $transition-function,
-    box-shadow $transition-time $transition-function;
+  box-shadow $transition-time $transition-function;
 
   &:hover,
   &:focus {

@@ -68,6 +68,7 @@
 
 .hero__title {
   @include font-source(26px, 900, 42px, 0.06em);
+
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -82,6 +83,7 @@
 
 .btn {
   @include font-source(16px, 700, 30px, 0.06em);
+  
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;

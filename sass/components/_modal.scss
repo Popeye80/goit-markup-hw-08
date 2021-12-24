@@ -18,18 +18,15 @@
 
 .modal {
   width: 100%;
-
   background-color: $secondary-text-color;
   box-shadow: 0px 1px 3px $command-box-shadow;
   border-radius: 4px;
-
   opacity: 1;
   transition: opacity $transition-time $transition-function, translate $transition-time $transition-function,
     transform $transition-time $transition-function;
 
   @media screen and (max-width: 767px) {
     max-width: 450px;
-
     position: relative;
   }
 
@@ -60,11 +57,9 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
-
   cursor: pointer;
   padding: 0;
   fill: $primary-text-color;
-
   transition: fill $transition-time $transition-function;
 
   &--accent:hover,
