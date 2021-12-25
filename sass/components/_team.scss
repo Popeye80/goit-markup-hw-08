@@ -15,7 +15,7 @@
 }
 
 .team__item {
-  box-shadow: 0px 1px 3px $command-box-shadow;
+  box-shadow: $command-box-shadow;
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
   background-color: $secondary-text-color;
@@ -53,6 +53,7 @@
 
 .team__text {
   @include font-source(16px, 400, 19px, 0.03em);
+  margin-bottom: 16px;
  
 }
 

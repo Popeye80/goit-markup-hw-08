@@ -108,7 +108,7 @@ header {
 .header__container {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: space-between;
 }
 
 .site-nav,
@@ -209,6 +209,7 @@ header {
   margin-right: 10px;
   justify-content: center;
   align-items: center;
+  color: #757575;
 }
 
 .nav__link--current {
@@ -277,9 +278,6 @@ header {
   line-height: 0;
   border: none;
   background-color: #ffffff;
-  position: absolute;
-  top: 10px;
-  right: 15px;
   cursor: pointer;
 }
 
@@ -494,6 +492,7 @@ header {
   .features {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 
@@ -502,11 +501,6 @@ header {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.features__item {
-  margin-top: 30px;
-  margin-left: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -523,6 +517,7 @@ header {
 @media screen and (min-width: 768px) {
   .features__item {
     flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
   }
 }
 
@@ -620,7 +615,7 @@ header {
 }
 
 .team__item {
-  box-shadow: 0px 1px 3px 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
   background-color: #ffffff;
@@ -664,6 +659,7 @@ header {
   font-weight: 400;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .social {
@@ -768,7 +764,6 @@ header {
 @media screen and (max-width: 1199px) {
   .footer__address {
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -965,7 +960,7 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 93px 15px;
+  padding: 15px;
 }
 
 .backdrop.is-hidden .modal {
@@ -1187,8 +1182,19 @@ header {
   }
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (max-width: 767px) {
+  .filter__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  .filter__item:not(:last-child):nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter__item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1305,5 +1311,12 @@ header {
 .projects__text {
   font-size: 16px;
   line-height: 1.87;
+  color: #757575;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects__box {
+    min-height: 148px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

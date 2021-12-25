@@ -26,10 +26,15 @@
       <div class="container header__container">
         <a class="logo site-nav__logo animate__animated animate__flip " href="./index.html">Web<span class="site-nav__logo--black">Studio</span>
         </a>
+        <button class="burger" type="button" data-menu-button>
+          <svg class="burger--icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
         <nav class="site-nav">
           <ul class="nav">
             <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./index.html">Студия</a>
+              <a class="nav__link nav__link--current" href="">Студия</a>
             </li>
             <li class="nav__item">
               <a class="nav__link " href="./portfolio.html">Портфолио</a>
@@ -56,11 +61,7 @@
         </ul>
       </div>
     
-      <button class="burger" type="button" data-menu-button>
-        <svg class="burger--icon" width="40" height="40">
-          <use href="./images/sprite.svg#icon-burger"></use>
-        </svg>
-      </button>
+     
       <div class="mobile-menu" data-menu>
         <button class="mobile--close" type="button" data-menu-close>
           <svg width="40" height="40">
@@ -281,7 +282,7 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images/worker2.jpg 1x, ./images/worker2-desktop2x.jpg"
+                  srcset="./images/worker2.jpg 1x, ./images/worker2-desktop2x.jpg 2x"
                 />
 
                 <source

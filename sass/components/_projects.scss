@@ -81,4 +81,18 @@
 .projects__text {
   font-size: 16px;
   line-height: 1.87;
+  color: $light-text-color;
+}
+
+// .projects__link {
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//    height: 100%;
+//   }
+// }
+
+.projects__box {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    // flex-grow: 1;
+    min-height: 148px;
+  }
 }

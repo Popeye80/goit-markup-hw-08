@@ -5,7 +5,7 @@ header {
 .header__container {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: space-between;
 }
 
 .site-nav,
@@ -74,6 +74,8 @@ header {
 .contacts__link {
   display: flex;
   align-items: center;
+  color: $light-text-color;
+  fill: $primary-text-color;
 
   @media screen and (min-width: 1200px) {
     @include centeredFlex;
@@ -83,14 +85,14 @@ header {
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     font-size: 12px;
   }
-  color: $light-text-color;
-  fill: $primary-text-color;
+   
 }
 
 .contacts__icon {
   margin-right: 10px;
   justify-content: center;
   align-items: center;
+  color: $light-text-color;
 }
 
 .nav__link--current {

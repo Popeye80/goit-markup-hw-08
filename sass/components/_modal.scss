@@ -8,7 +8,7 @@
   background-color: $backdrop-bgc;
   opacity: 1;
   transition: opacity $transition-time $transition-function, visibility $transition-time $transition-function;
-  padding: 93px 15px;
+  padding: 15px;
 }
 
 .backdrop.is-hidden .modal {
