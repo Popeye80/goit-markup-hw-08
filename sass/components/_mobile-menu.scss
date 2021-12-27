@@ -97,14 +97,12 @@
   display: flex;
 }
 
-.social-mobile__item {
-  padding-right: 10px;
-  border-right: 1px solid $form-border-color;
-
-  &:not(:last-child) {
+.social-mobile__item:not(:last-child) {
     margin-right: 10px;
+    border-right: 1px solid $form-border-color;
+    padding-right: 10px;
   }
-}
+
 
 .social-mobile__link {
   @include font-source(18px, 500, 22px, 0.02em);
